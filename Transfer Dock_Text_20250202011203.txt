@@ -1,0 +1,74 @@
+Te amo
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Vale 💖</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.freepik.com/vector-premium/fondo-patron-flor-roja-dibujado-mano_23-2148258816.jpg');
+            background-size: cover;
+        }
+        .container {
+            margin-top: 100px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            display: inline-block;
+            border-radius: 10px;
+        }
+        h1 {
+            color: red;
+        }
+        button {
+            font-size: 18px;
+            margin: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .yes {
+            background-color: green;
+            color: white;
+        }
+        .no {
+            background-color: red;
+            color: white;
+        }
+        #mensaje {
+            display: none;
+            font-size: 20px;
+            color: #ff1493;
+            margin-top: 20px;
+        }
+        #imagen {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Sabías que te amo? ❤️</h1>
+        <button class="yes" onclick="mostrarMensaje()">Sí</button>
+        <button class="no" onclick="reintentar()">No</button>
+        <p id="mensaje">Si, te amo porque eres todo lo que buscaba y al encontrarte me esforzaré para ser el motivo de tu felicidad ❤️</p>
+        <img id="imagen" src="https://img.freepik.com/vector-premium/dibujos-animados-lindo-par-osos-abrazo_626587-102.jpg" alt="Ositos abrazados" width="300">
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById("mensaje").style.display = "block";
+            document.getElementById("imagen").style.display = "block";
+        }
+
+        function reintentar() {
+            alert("Piensa bien, te daré otra chance :(");
+        }
+    </script>
+</body>
+</html>
